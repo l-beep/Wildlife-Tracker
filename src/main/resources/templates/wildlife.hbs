@@ -14,14 +14,13 @@
                 <a class="nav-link" href="/sightings">ALL SIGHTINGS</a>
             </li>
         </ul>
-        <h1 class="text-center">LETS START TRACKING</h1>
         <div class="tracker-form">
             <div class="card p-4">
                 <h2 class="text-center">TRACK AN ANIMAL</h2>
                 <hr>
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#common">Common animals</a>
+                        <a class="nav-link active" data-toggle="tab" href="#common">Non-Endangered animals</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="tab" href="#endangered">Endangered animals</a>
@@ -35,22 +34,22 @@
                         <form action="/wildlife/new" method="post">
                             <div class="form-group">
                                 <label for="name">Animal species</label>
-                                <input type="text" class="form-control"  name="name" id="name" aria-describedby="emailHelp" placeholder="Enter animal species eg lion" required>
+                                <input type="text" class="form-control"  name="name" id="name" aria-describedby="emailHelp" placeholder="animal species " required>
                             </div>
                             <div class="form-group">
                                 <label for="animalId">Animal id</label>
-                                <input type="number" class="form-control"  name="animalId" id="animalId" aria-describedby="emailHelp" placeholder="Enter animal id" required>
+                                <input type="number" class="form-control"  name="animalId" id="animalId" aria-describedby="emailHelp" placeholder=" animal id" required>
                             </div>
                             <div class="form-group">
                                 <label for="location">Location</label>
-                                <input type="text" class="form-control" name="location" id="location" aria-describedby="emailHelp" placeholder="Enter location" required>
+                                <input type="text" class="form-control" name="location" id="location" aria-describedby="emailHelp" placeholder="location" required>
                             </div>
                             <div class="form-group">
                                 <label for="ranger">Ranger's name</label>
-                                <input type="text" class="form-control" name="ranger" id="ranger" aria-describedby="emailHelp" placeholder="Enter ranger's name" required>
+                                <input type="text" class="form-control" name="ranger" id="ranger" aria-describedby="emailHelp" placeholder="ranger's name" required>
                             </div>
 
-                            <button class="btn btn-primary">Submit</button>
+                            <button class="btn btn-primary">Track Animal</button>
                         </form>
                     </div>
                     <div class="tab-pane container fade" id="endangered">
@@ -58,19 +57,19 @@
                         <form action="/wildlife/new" method="post">
                             <div class="form-group">
                                 <label for="name">Animal species</label>
-                                <input type="text" class="form-control"  name="name" id="name" aria-describedby="emailHelp" placeholder="Enter animal species eg lion" required>
+                                <input type="text" class="form-control"  name="name" id="name" aria-describedby="emailHelp" placeholder=" animal species " required>
                             </div>
                             <div class="form-group">
                                 <label for="animalId">Animal id</label>
-                                <input type="number" class="form-control" name="animalId" id="animalId" aria-describedby="emailHelp" placeholder="Enter animal id" required>
+                                <input type="number" class="form-control" name="animalId" id="animalId" aria-describedby="emailHelp" placeholder="animal id" required>
                             </div>
                             <div class="form-group">
                                 <label for="location">Location</label>
-                                <input type="text" class="form-control" name="location" id="location" aria-describedby="emailHelp" placeholder="Enter location" required>
+                                <input type="text" class="form-control" name="location" id="location" aria-describedby="emailHelp" placeholder="location" required>
                             </div>
                             <div class="form-group">
                                 <label for="ranger">Ranger's name</label>
-                                <input type="text" class="form-control" name="ranger" id="ranger" aria-describedby="emailHelp" placeholder="Enter ranger's name" required>
+                                <input type="text" class="form-control" name="ranger" id="ranger" aria-describedby="emailHelp" placeholder="ranger's name" required>
                             </div>
                             <div class="form-group">
                                 <label for="health">Health</label>
@@ -88,7 +87,7 @@
                                     <option>adult</option>
                                 </select>
                             </div>
-                            <button  class="btn btn-primary">Submit</button>
+                            <button  class="btn btn-primary">Track Animal</button>
                         </form>
                     </div>
                 </div>
