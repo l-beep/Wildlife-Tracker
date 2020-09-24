@@ -22,6 +22,3 @@ dependencies {
     compile group: 'postgresql', name: 'postgresql', version: '9.0-801.jdbc4'
 }
 
-applicationName = "wildlife-tracker254"
-mainClassName = 'App'
-task stage(dependsOn: ['clean', 'installDist'])

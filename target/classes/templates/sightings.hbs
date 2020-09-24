@@ -14,8 +14,8 @@
         </li>
     </ul>
     <div class="container">
-        <h1 class="text-center sight ">Sightings</h1>
-        {{#if  sightings}}
+    <h1 class="text-center sight ">Sightings</h1>
+    {{#if  sightings}}
             <table class="table table-hover table-dark">
                 <thead>
                 <tr>
@@ -26,19 +26,19 @@
                 </tr>
                 </thead>
                 <tbody>
-                {{#each sightings}}
-                    <tr>
-                        <td>{{rangerName}}</td>
-                        <td>{{location}}</td>
-                        <td>{{wildlifeId}}</td>
-                        <td>{{time}}</td>
-                    </tr>
-                {{/each}}
+            {{#each sightings}}
+                <tr>
+                    <td>{{rangerName}}</td>
+                    <td>{{location}}</td>
+                    <td>{{wildlifeId}}</td>
+                    <td>{{time}}</td>
+                </tr>
+            {{/each}}
                 </tbody>
             </table>
         {{else}}
-            <h2>No sightings found</h2>
-        {{/if}}
+        <h2>No sightings so far</h2>
+    {{/if}}
     </div>
 {{/partial}}
 {{>layout.hbs}}

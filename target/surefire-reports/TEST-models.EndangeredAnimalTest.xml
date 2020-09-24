@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="9" failures="0" name="models.EndangeredAnimalTest" time="0.284" errors="9" skipped="0">
+<testsuite tests="9" failures="0" name="models.EndangeredAnimalTest" time="0.245" errors="9" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.8+10"/>
@@ -62,8 +62,8 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="models.EndangeredAnimalTest" name="animal_instantiateWithCorrectType_String" time="0.237">
-    <error message="Could not acquire a connection from DataSource - FATAL: database &quot;wildlife_tracker_test&quot; does not exist" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: database &quot;wildlife_tracker_test&quot; does not exist
+  <testcase classname="models.EndangeredAnimalTest" name="animal_instantiateWithCorrectType_String" time="0.21">
+    <error message="Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;moringa&quot;" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;moringa&quot;
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.&lt;init&gt;(Connection.java:51)
 	at org.sql2o.Sql2o.open(Sql2o.java:225)
@@ -91,9 +91,9 @@
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: org.postgresql.util.PSQLException: FATAL: database &quot;wildlife_tracker_test&quot; does not exist
-	at org.postgresql.core.v3.ConnectionFactoryImpl.readStartupMessages(ConnectionFactoryImpl.java:712)
-	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:213)
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user &quot;moringa&quot;
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:433)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:208)
 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:67)
 	at org.postgresql.jdbc.PgConnection.&lt;init&gt;(PgConnection.java:216)
 	at org.postgresql.Driver.makeConnection(Driver.java:406)
@@ -105,8 +105,8 @@ Caused by: org.postgresql.util.PSQLException: FATAL: database &quot;wildlife_tra
 	... 26 more
 </error>
   </testcase>
-  <testcase classname="models.EndangeredAnimalTest" name="saveAge_addsAgeOfEndangeredAnimalToDB_void" time="0.005">
-    <error message="Could not acquire a connection from DataSource - FATAL: database &quot;wildlife_tracker_test&quot; does not exist" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: database &quot;wildlife_tracker_test&quot; does not exist
+  <testcase classname="models.EndangeredAnimalTest" name="saveAge_addsAgeOfEndangeredAnimalToDB_void" time="0.002">
+    <error message="Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;moringa&quot;" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;moringa&quot;
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.&lt;init&gt;(Connection.java:51)
 	at org.sql2o.Sql2o.open(Sql2o.java:225)
@@ -134,9 +134,9 @@ Caused by: org.postgresql.util.PSQLException: FATAL: database &quot;wildlife_tra
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: org.postgresql.util.PSQLException: FATAL: database &quot;wildlife_tracker_test&quot; does not exist
-	at org.postgresql.core.v3.ConnectionFactoryImpl.readStartupMessages(ConnectionFactoryImpl.java:712)
-	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:213)
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user &quot;moringa&quot;
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:433)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:208)
 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:67)
 	at org.postgresql.jdbc.PgConnection.&lt;init&gt;(PgConnection.java:216)
 	at org.postgresql.Driver.makeConnection(Driver.java:406)
@@ -148,8 +148,8 @@ Caused by: org.postgresql.util.PSQLException: FATAL: database &quot;wildlife_tra
 	... 26 more
 </error>
   </testcase>
-  <testcase classname="models.EndangeredAnimalTest" name="save_addAnimalToDatabase_void" time="0.008">
-    <error message="Could not acquire a connection from DataSource - FATAL: database &quot;wildlife_tracker_test&quot; does not exist" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: database &quot;wildlife_tracker_test&quot; does not exist
+  <testcase classname="models.EndangeredAnimalTest" name="save_addAnimalToDatabase_void" time="0.007">
+    <error message="Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;moringa&quot;" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;moringa&quot;
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.&lt;init&gt;(Connection.java:51)
 	at org.sql2o.Sql2o.open(Sql2o.java:225)
@@ -177,9 +177,9 @@ Caused by: org.postgresql.util.PSQLException: FATAL: database &quot;wildlife_tra
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: org.postgresql.util.PSQLException: FATAL: database &quot;wildlife_tracker_test&quot; does not exist
-	at org.postgresql.core.v3.ConnectionFactoryImpl.readStartupMessages(ConnectionFactoryImpl.java:712)
-	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:213)
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user &quot;moringa&quot;
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:433)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:208)
 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:67)
 	at org.postgresql.jdbc.PgConnection.&lt;init&gt;(PgConnection.java:216)
 	at org.postgresql.Driver.makeConnection(Driver.java:406)
@@ -191,8 +191,8 @@ Caused by: org.postgresql.util.PSQLException: FATAL: database &quot;wildlife_tra
 	... 26 more
 </error>
   </testcase>
-  <testcase classname="models.EndangeredAnimalTest" name="animal_instantiateCorrectly_true" time="0.005">
-    <error message="Could not acquire a connection from DataSource - FATAL: database &quot;wildlife_tracker_test&quot; does not exist" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: database &quot;wildlife_tracker_test&quot; does not exist
+  <testcase classname="models.EndangeredAnimalTest" name="animal_instantiateCorrectly_true" time="0.004">
+    <error message="Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;moringa&quot;" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;moringa&quot;
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.&lt;init&gt;(Connection.java:51)
 	at org.sql2o.Sql2o.open(Sql2o.java:225)
@@ -220,9 +220,9 @@ Caused by: org.postgresql.util.PSQLException: FATAL: database &quot;wildlife_tra
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: org.postgresql.util.PSQLException: FATAL: database &quot;wildlife_tracker_test&quot; does not exist
-	at org.postgresql.core.v3.ConnectionFactoryImpl.readStartupMessages(ConnectionFactoryImpl.java:712)
-	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:213)
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user &quot;moringa&quot;
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:433)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:208)
 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:67)
 	at org.postgresql.jdbc.PgConnection.&lt;init&gt;(PgConnection.java:216)
 	at org.postgresql.Driver.makeConnection(Driver.java:406)
@@ -235,7 +235,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: database &quot;wildlife_tra
 </error>
   </testcase>
   <testcase classname="models.EndangeredAnimalTest" name="animal_instantiateWithCorrectId_int" time="0.004">
-    <error message="Could not acquire a connection from DataSource - FATAL: database &quot;wildlife_tracker_test&quot; does not exist" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: database &quot;wildlife_tracker_test&quot; does not exist
+    <error message="Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;moringa&quot;" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;moringa&quot;
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.&lt;init&gt;(Connection.java:51)
 	at org.sql2o.Sql2o.open(Sql2o.java:225)
@@ -263,9 +263,9 @@ Caused by: org.postgresql.util.PSQLException: FATAL: database &quot;wildlife_tra
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: org.postgresql.util.PSQLException: FATAL: database &quot;wildlife_tracker_test&quot; does not exist
-	at org.postgresql.core.v3.ConnectionFactoryImpl.readStartupMessages(ConnectionFactoryImpl.java:712)
-	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:213)
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user &quot;moringa&quot;
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:433)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:208)
 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:67)
 	at org.postgresql.jdbc.PgConnection.&lt;init&gt;(PgConnection.java:216)
 	at org.postgresql.Driver.makeConnection(Driver.java:406)
@@ -277,8 +277,8 @@ Caused by: org.postgresql.util.PSQLException: FATAL: database &quot;wildlife_tra
 	... 26 more
 </error>
   </testcase>
-  <testcase classname="models.EndangeredAnimalTest" name="all_returnAllAnimals_List" time="0.007">
-    <error message="Could not acquire a connection from DataSource - FATAL: database &quot;wildlife_tracker_test&quot; does not exist" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: database &quot;wildlife_tracker_test&quot; does not exist
+  <testcase classname="models.EndangeredAnimalTest" name="all_returnAllAnimals_List" time="0.006">
+    <error message="Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;moringa&quot;" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;moringa&quot;
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.&lt;init&gt;(Connection.java:51)
 	at org.sql2o.Sql2o.open(Sql2o.java:225)
@@ -306,9 +306,9 @@ Caused by: org.postgresql.util.PSQLException: FATAL: database &quot;wildlife_tra
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: org.postgresql.util.PSQLException: FATAL: database &quot;wildlife_tracker_test&quot; does not exist
-	at org.postgresql.core.v3.ConnectionFactoryImpl.readStartupMessages(ConnectionFactoryImpl.java:712)
-	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:213)
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user &quot;moringa&quot;
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:433)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:208)
 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:67)
 	at org.postgresql.jdbc.PgConnection.&lt;init&gt;(PgConnection.java:216)
 	at org.postgresql.Driver.makeConnection(Driver.java:406)
@@ -320,8 +320,8 @@ Caused by: org.postgresql.util.PSQLException: FATAL: database &quot;wildlife_tra
 	... 26 more
 </error>
   </testcase>
-  <testcase classname="models.EndangeredAnimalTest" name="equals_returnTrueWhenObjectsHaveSameValues_true" time="0.007">
-    <error message="Could not acquire a connection from DataSource - FATAL: database &quot;wildlife_tracker_test&quot; does not exist" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: database &quot;wildlife_tracker_test&quot; does not exist
+  <testcase classname="models.EndangeredAnimalTest" name="equals_returnTrueWhenObjectsHaveSameValues_true" time="0.003">
+    <error message="Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;moringa&quot;" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;moringa&quot;
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.&lt;init&gt;(Connection.java:51)
 	at org.sql2o.Sql2o.open(Sql2o.java:225)
@@ -349,9 +349,9 @@ Caused by: org.postgresql.util.PSQLException: FATAL: database &quot;wildlife_tra
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: org.postgresql.util.PSQLException: FATAL: database &quot;wildlife_tracker_test&quot; does not exist
-	at org.postgresql.core.v3.ConnectionFactoryImpl.readStartupMessages(ConnectionFactoryImpl.java:712)
-	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:213)
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user &quot;moringa&quot;
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:433)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:208)
 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:67)
 	at org.postgresql.jdbc.PgConnection.&lt;init&gt;(PgConnection.java:216)
 	at org.postgresql.Driver.makeConnection(Driver.java:406)
@@ -363,8 +363,8 @@ Caused by: org.postgresql.util.PSQLException: FATAL: database &quot;wildlife_tra
 	... 26 more
 </error>
   </testcase>
-  <testcase classname="models.EndangeredAnimalTest" name="saveHealth_addsHealthOfEndangeredAnimalToDB_void" time="0.007">
-    <error message="Could not acquire a connection from DataSource - FATAL: database &quot;wildlife_tracker_test&quot; does not exist" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: database &quot;wildlife_tracker_test&quot; does not exist
+  <testcase classname="models.EndangeredAnimalTest" name="saveHealth_addsHealthOfEndangeredAnimalToDB_void" time="0.006">
+    <error message="Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;moringa&quot;" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;moringa&quot;
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.&lt;init&gt;(Connection.java:51)
 	at org.sql2o.Sql2o.open(Sql2o.java:225)
@@ -392,9 +392,9 @@ Caused by: org.postgresql.util.PSQLException: FATAL: database &quot;wildlife_tra
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: org.postgresql.util.PSQLException: FATAL: database &quot;wildlife_tracker_test&quot; does not exist
-	at org.postgresql.core.v3.ConnectionFactoryImpl.readStartupMessages(ConnectionFactoryImpl.java:712)
-	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:213)
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user &quot;moringa&quot;
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:433)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:208)
 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:67)
 	at org.postgresql.jdbc.PgConnection.&lt;init&gt;(PgConnection.java:216)
 	at org.postgresql.Driver.makeConnection(Driver.java:406)
@@ -406,8 +406,8 @@ Caused by: org.postgresql.util.PSQLException: FATAL: database &quot;wildlife_tra
 	... 26 more
 </error>
   </testcase>
-  <testcase classname="models.EndangeredAnimalTest" name="animal_instantiateWithName_String" time="0.004">
-    <error message="Could not acquire a connection from DataSource - FATAL: database &quot;wildlife_tracker_test&quot; does not exist" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: database &quot;wildlife_tracker_test&quot; does not exist
+  <testcase classname="models.EndangeredAnimalTest" name="animal_instantiateWithName_String" time="0.003">
+    <error message="Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;moringa&quot;" type="org.sql2o.Sql2oException">org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: password authentication failed for user &quot;moringa&quot;
 	at org.sql2o.Connection.createConnection(Connection.java:291)
 	at org.sql2o.Connection.&lt;init&gt;(Connection.java:51)
 	at org.sql2o.Sql2o.open(Sql2o.java:225)
@@ -435,9 +435,9 @@ Caused by: org.postgresql.util.PSQLException: FATAL: database &quot;wildlife_tra
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: org.postgresql.util.PSQLException: FATAL: database &quot;wildlife_tracker_test&quot; does not exist
-	at org.postgresql.core.v3.ConnectionFactoryImpl.readStartupMessages(ConnectionFactoryImpl.java:712)
-	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:213)
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user &quot;moringa&quot;
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:433)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:208)
 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:67)
 	at org.postgresql.jdbc.PgConnection.&lt;init&gt;(PgConnection.java:216)
 	at org.postgresql.Driver.makeConnection(Driver.java:406)
